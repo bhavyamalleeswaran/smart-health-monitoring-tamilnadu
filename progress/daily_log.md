@@ -36,3 +36,26 @@
 - Install Python libraries
 - Create requirements.txt
 - Build first Jupyter notebook for data loading
+
+---
+
+## Day 3 — June 15, 2025
+**Goal:** Environment setup and data loading notebook
+
+**Completed:**
+- ✅ Installed all Python libraries (pandas, numpy, 
+  matplotlib, seaborn, scikit-learn, xgboost, streamlit)
+- ✅ Cloned GitHub repo to local computer using VS Code
+- ✅ Created 01_data_loading.ipynb notebook
+- ✅ Successfully loaded Tamil Nadu dataset (1008 rows)
+- ✅ Checked missing values - dataset is clean!
+- ✅ Viewed district summary and outbreak distribution
+- ✅ Pushed to GitHub
+
+**Blockers:** None
+
+**Tomorrow's Plan:**
+- Create EDA notebook
+- Disease trend charts by month
+- District wise analysis
+- Correlation heatmap

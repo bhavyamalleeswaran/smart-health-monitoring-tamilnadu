@@ -111,3 +111,27 @@
 - Feature engineering
 - Train test split
 - Save processed data
+
+---
+
+## Day 6 — June 18, 2026
+**Goal:** Data Preprocessing and Feature Engineering
+
+**Completed:**
+- ✅ Created 04_preprocessing.ipynb
+- ✅ Added season column
+- ✅ Added lag features (last month, 2 months ago)
+- ✅ Encoded district and season
+- ✅ Selected 13 features for ML
+- ✅ Scaled with StandardScaler
+- ✅ 80/20 train-test split done
+- ✅ Saved all processed files
+- ✅ Pushed to GitHub
+
+**Blockers:** None
+
+**Tomorrow's Plan:**
+- Build baseline ML models
+- Logistic Regression, Decision Tree, Random Forest
+- Compare accuracy and F1 score
+- Confusion matrix for each model

@@ -84,3 +84,30 @@
 - EDA Part 2 - water quality correlations
 - Scatter plots
 - Correlation heatmap
+
+---
+
+## Day 5 — June 17, 2025
+**Goal:** EDA Part 2 - Water Quality Correlations
+
+**Completed:**
+- ✅ Created 03_eda_part2.ipynb
+- ✅ Correlation heatmap (all features)
+- ✅ Turbidity vs Disease Cases scatter plot
+- ✅ Coliform Count vs Cholera scatter plot
+- ✅ Rainfall vs Diarrhea scatter plot
+- ✅ Seasonal box plot
+- ✅ Feature correlation bar chart
+- ✅ All charts saved to reports folder
+- ✅ Pushed to GitHub
+
+**Key Findings:**
+- Coliform count strongly correlates with disease
+- NE Monsoon season has highest outbreak risk
+- Turbidity and rainfall are key predictors
+
+**Tomorrow's Plan:**
+- Data preprocessing
+- Feature engineering
+- Train test split
+- Save processed data

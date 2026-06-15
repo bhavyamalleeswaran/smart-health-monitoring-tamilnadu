@@ -62,7 +62,7 @@
 
 ---
 
-## Day 4 — June 15, 2025
+## Day 4 — June 16, 2025
 **Goal:** Exploratory Data Analysis Part 1
 
 **Completed:**

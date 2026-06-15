@@ -59,3 +59,28 @@
 - Disease trend charts by month
 - District wise analysis
 - Correlation heatmap
+
+---
+
+## Day 4 — June 15, 2025
+**Goal:** Exploratory Data Analysis Part 1
+
+**Completed:**
+- ✅ Created 02_eda_part1.ipynb
+- ✅ Monthly disease trend line chart
+- ✅ District wise total cases bar chart
+- ✅ Disease type distribution pie chart
+- ✅ Seasonal heatmap by year and month
+- ✅ Outbreak count by district chart
+- ✅ All 4 charts saved to reports folder
+- ✅ Pushed to GitHub
+
+**Key Findings:**
+- Diarrhea is the most common disease
+- Post monsoon months show highest cases
+- Pushed all charts to reports folder
+
+**Tomorrow's Plan:**
+- EDA Part 2 - water quality correlations
+- Scatter plots
+- Correlation heatmap

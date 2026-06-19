@@ -186,3 +186,28 @@
 - Build regression model to predict case COUNT (not just outbreak Y/N)
 - Linear Regression and Random Forest Regressor
 - MAE, RMSE, R² metrics
+
+---
+
+## Day 9 — June 19, 2026
+**Goal:** Build regression model to predict case counts
+
+**Completed:**
+- ✅ Created 07_regression_model.ipynb
+- ✅ Trained Linear Regression model
+- ✅ Trained Random Forest Regressor
+- ✅ Compared MAE, RMSE, R² scores
+- ✅ Generated actual vs predicted scatter plot
+- ✅ Generated residual plot
+- ✅ Generated feature importance for regression
+- ✅ Saved regression model to models/
+- ✅ Pushed to GitHub
+
+**Key Findings:**
+- [Note best model and R² score after running]
+- Random Forest Regressor likely outperforms Linear Regression
+
+**Tomorrow's Plan:**
+- Build alert system logic (Low/Medium/High risk levels)
+- Create function to predict outbreak risk from water quality inputs
+- Test with sample inputs

@@ -162,3 +162,27 @@
 - Hyperparameter tuning with GridSearchCV
 - Try XGBoost classifier
 - Compare optimized vs baseline performance
+
+---
+
+## Day 8 — June 19, 2026
+**Goal:** Hyperparameter tuning and XGBoost
+
+**Completed:**
+- ✅ Created 06_model_optimization.ipynb
+- ✅ Ran GridSearchCV on Random Forest (tuned n_estimators, 
+  max_depth, min_samples_split)
+- ✅ Trained XGBoost classifier
+- ✅ Compared Baseline RF, Tuned RF, and XGBoost
+- ✅ Generated comparison chart and feature importance chart
+- ✅ Saved best overall model to models/best_model.pkl
+- ✅ Pushed to GitHub
+
+**Key Findings:**
+- [Note best model and F1-score after running]
+- Hyperparameter tuning improved performance over baseline
+
+**Tomorrow's Plan:**
+- Build regression model to predict case COUNT (not just outbreak Y/N)
+- Linear Regression and Random Forest Regressor
+- MAE, RMSE, R² metrics

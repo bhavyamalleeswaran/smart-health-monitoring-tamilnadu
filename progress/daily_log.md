@@ -211,3 +211,27 @@
 - Build alert system logic (Low/Medium/High risk levels)
 - Create function to predict outbreak risk from water quality inputs
 - Test with sample inputs
+
+---
+
+## Day 10 — June 19, 2026
+**Goal:** Build the early warning alert system
+
+**Completed:**
+- ✅ Created src/alert_system.py with check_outbreak_risk() function
+- ✅ Implemented 3-level risk classification:
+  - 🟢 LOW (probability < 0.3): routine monitoring
+  - 🟡 MEDIUM (0.3-0.6): increase testing, alert health workers
+  - 🔴 HIGH (>0.6): public health advisory, deploy resources
+- ✅ Created 08_alert_system_test.ipynb with 4 test scenarios
+- ✅ Tested with varying seasons, districts, and water quality levels
+- ✅ Pushed to GitHub
+
+**Key Findings:**
+- Alert system correctly identifies high-risk monsoon scenarios
+- Clean water + dry season consistently shows LOW risk
+- Ready to integrate into the dashboard
+
+**Tomorrow's Plan:**
+- Build Streamlit dashboard skeleton
+- District selector, trend charts, current risk indicator

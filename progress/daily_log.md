@@ -135,3 +135,30 @@
 - Logistic Regression, Decision Tree, Random Forest
 - Compare accuracy and F1 score
 - Confusion matrix for each model
+
+---
+
+## Day 7 — June 19, 2026
+**Goal:** Build and compare baseline ML models
+
+**Completed:**
+- ✅ Discovered and fixed a data imbalance bug (original dataset had 
+  100% outbreak rate, causing fake perfect model scores)
+- ✅ Regenerated dataset with realistic 39% outbreak rate
+- ✅ Re-ran all notebooks with corrected, balanced data
+- ✅ Trained Logistic Regression, Decision Tree, Random Forest
+- ✅ Random Forest performed best: Accuracy 0.847, F1-Score 0.800
+- ✅ Generated confusion matrices for all 3 models
+- ✅ Generated feature importance chart
+- ✅ Saved best model to models/baseline_model.pkl
+- ✅ Pushed to GitHub
+
+**Key Findings:**
+- Coliform count is the strongest predictor of outbreaks
+- Rainfall and turbidity also highly predictive
+- Random Forest outperforms Logistic Regression and Decision Tree
+
+**Tomorrow's Plan:**
+- Hyperparameter tuning with GridSearchCV
+- Try XGBoost classifier
+- Compare optimized vs baseline performance

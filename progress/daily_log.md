@@ -235,3 +235,23 @@
 **Tomorrow's Plan:**
 - Build Streamlit dashboard skeleton
 - District selector, trend charts, current risk indicator
+
+---
+
+## Day 11 — June 20, 2026
+**Goal:** Build Streamlit dashboard skeleton
+
+**Completed:**
+- ✅ Created dashboard/app.py
+- ✅ Added sidebar filters (district selector, year multiselect)
+- ✅ Added 4 key metrics cards
+- ✅ Added disease trend line chart
+- ✅ Added district comparison bar chart
+- ✅ Successfully ran dashboard locally with streamlit
+- ✅ Verified dashboard works correctly in browser
+- ✅ Pushed to GitHub
+
+**Tomorrow's Plan:**
+- Add prediction input form to dashboard
+- Connect alert_system.py to dashboard
+- Display risk level badge and recommendations

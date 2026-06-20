@@ -119,6 +119,117 @@ plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 st.pyplot(fig2)
 
+# ---------- PREDICTION SECTION ----------
+st.markdown("---")
+st.header("🔮 Predict Outbreak Risk")
+st.write("Enter current water quality and environmental parameters "
+         "to get a real-time outbreak risk assessment.")
+
+from alert_system import check_outbreak_risk
+
+pred_col1, pred_col2, pred_col3 = st.columns(3)
+
+with pred_col1:
+    st.subheader("🌧️ Environmental")
+    input_rainfall = st.slider("Rainfall (mm)", 0.0, 400.0, 100.0)
+    input_temperature = st.slider("Temperature (°C)", 20.0, 40.0, 30.0)
+    input_month = st.selectbox("Month", list(range(1, 13)),
+                                index=10,
+                                format_func=lambda m: [
+                                    'January', 'February', 'March', 'April',
+                                    'May', 'June', 'July', 'August',
+                                    'September', 'October', 'November',
+                                    'December'][m-1])
+
+with pred_col2:
+    st.subheader("💧 Water Quality")
+    input_pH = st.slider("pH Level", 5.5, 9.0, 7.2)
+    input_turbidity = st.slider("Turbidity (NTU)", 0.0, 40.0, 10.0)
+    input_coliform = st.slider("Coliform Count (per 100ml)",
+                                0.0, 500.0, 100.0)
+
+with pred_col3:
+    st.subheader("🧪 Additional Parameters")
+    input_do = st.slider("Dissolved Oxygen (mg/L)", 2.0, 10.0, 6.0)
+    input_tds = st.slider("Total Dissolved Solids (mg/L)",
+                           150.0, 1300.0, 600.0)
+    input_district = st.selectbox("District", districts)
+    input_cases_last_month = st.slider(
+        "Cases Last Month", 0, 200, 50)
+    input_cases_2mo_ago = st.slider(
+        "Cases 2 Months Ago", 0, 200, 40)
+
+st.markdown("")
+
+if st.button("🔍 Predict Outbreak Risk", type="primary",
+              use_container_width=True):
+    result = check_outbreak_risk(
+        rainfall_mm=input_rainfall,
+        temperature_celsius=input_temperature,
+        pH=input_pH,
+        turbidity_NTU=input_turbidity,
+        coliform_count_per100ml=input_coliform,
+        dissolved_oxygen_mg_L=input_do,
+        total_dissolved_solids_mg_L=input_tds,
+        month=input_month,
+        district=input_district,
+        cases_last_month=input_cases_last_month,
+        cases_2_months_ago=input_cases_2mo_ago
+    )
+
+    st.markdown("### Prediction Result")
+
+    risk_colors = {
+        'LOW': 'success',
+        'MEDIUM': 'warning',
+        'HIGH': 'error'
+    }
+
+    result_col1, result_col2 = st.columns([1, 2])
+
+    with result_col1:
+        if result['risk_level'] == 'LOW':
+            st.success(f"{result['emoji']} **{result['risk_level']} RISK**")
+        elif result['risk_level'] == 'MEDIUM':
+            st.warning(f"{result['emoji']} **{result['risk_level']} RISK**")
+        else:
+            st.error(f"{result['emoji']} **{result['risk_level']} RISK**")
+
+        st.metric("Outbreak Probability",
+                  f"{result['probability']*100:.1f}%")
+
+    with result_col2:
+        st.write(f"**District:** {result['district']}")
+        st.write(f"**Season:** {result['season']}")
+        st.write(f"**Recommendation:**")
+        st.info(result['recommendation'])
+
+    # Probability bar
+    st.progress(result['probability'])
+
 st.markdown("---")
 st.caption("Data Source: Tamil Nadu Waterborne Disease Dataset (2018-2024) | "
            "Built with Streamlit | Smart Health Monitoring Project")
+
+# ---------- ABOUT SECTION ----------
+st.markdown("---")
+with st.expander("ℹ️ About This Project"):
+    st.write("""
+    **Smart Community Health Monitoring & Early Warning System**
+    
+    This system was built to predict waterborne disease outbreaks
+    (Cholera, Diarrhea, Typhoid, Hepatitis A) across 12 districts
+    in Tamil Nadu using water quality and environmental data.
+    
+    **How it works:**
+    - A Random Forest machine learning model analyzes water quality
+      parameters (turbidity, coliform count, pH) alongside rainfall
+      and seasonal patterns
+    - The model predicts outbreak risk 2 weeks in advance
+    - Risk levels are categorized as Low, Medium, or High to guide
+      public health response
+    
+    **Tech Stack:** Python, scikit-learn, XGBoost, Streamlit, pandas
+    
+    **Data Period:** 2018-2024 (1008 monthly records)
+    """)

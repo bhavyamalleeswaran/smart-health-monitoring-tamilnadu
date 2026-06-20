@@ -255,3 +255,30 @@
 - Add prediction input form to dashboard
 - Connect alert_system.py to dashboard
 - Display risk level badge and recommendations
+
+---
+
+## Day 12 — June 20, 2026
+**Goal:** Add prediction UI and alert display to dashboard
+
+**Completed:**
+- ✅ Added prediction input form with sliders for all parameters
+- ✅ Connected alert_system.py to dashboard
+- ✅ Added colored risk badges (green/yellow/red)
+- ✅ Added probability percentage and progress bar
+- ✅ Tested extensively with multiple input combinations
+- ✅ Discovered model has a sharp decision boundary around 
+  coliform count ≈ 175-180 (probability jumps from ~11% to ~79%)
+- ✅ Saved 3 screenshots (low/medium/high risk) to reports/screenshots/
+- ✅ Pushed to GitHub
+
+**Key Findings:**
+- Model is highly decisive, confirming coliform count as the 
+  dominant predictive feature (consistent with Day 8 importance)
+- Sharp thresholds suggest the model learned clear patterns from 
+  training data rather than noisy boundaries
+
+**Tomorrow's Plan:**
+- Deploy dashboard to Streamlit Cloud
+- Get live shareable URL
+- Add link to README

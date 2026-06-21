@@ -304,3 +304,22 @@
 - Write final project report
 - Document methodology, results, and findings
 - Add screenshots and charts to report
+
+---
+
+## Day 14 — June 21, 2026
+**Goal:** Write the final project report
+
+**Completed:**
+- ✅ Created reports/final_report.md
+- ✅ Wrote Abstract, Introduction, Methodology sections
+- ✅ Documented dataset, EDA findings, and model results
+- ✅ Documented the model sensitivity/threshold finding
+- ✅ Added conclusions, limitations, and future work
+- ✅ Filled in actual scores from all notebooks
+- ✅ Pushed to GitHub
+
+**Tomorrow's Plan:**
+- Clean up all notebooks (add markdown explanations)
+- Ensure all notebooks run top-to-bottom without errors
+- Final code review

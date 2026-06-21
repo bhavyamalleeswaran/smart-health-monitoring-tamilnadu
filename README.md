@@ -101,6 +101,9 @@ smart-health-monitoring-tamilnadu/
 
 ---
 
+## 🌐 Live Dashboard
+**[Click here to view the live dashboard](https://smart-health-monitoring-tamilnadu-urfvx7yejjycqhbqbbrrgm.streamlit.app)**
+
 ## 🚀 How to Run Locally
 ```bash
 # Clone the repo

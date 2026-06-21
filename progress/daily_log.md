@@ -282,3 +282,25 @@
 - Deploy dashboard to Streamlit Cloud
 - Get live shareable URL
 - Add link to README
+
+---
+
+## Day 13 — June 21, 2026
+**Goal:** Deploy dashboard to Streamlit Cloud
+
+**Completed:**
+- ✅ Fixed missing requirements.txt (critical bug found and fixed!)
+- ✅ Created Streamlit Cloud account
+- ✅ Deployed dashboard/app.py successfully
+- ✅ Got live shareable URL
+- ✅ Tested live dashboard with LOW and HIGH risk examples - both 
+  worked correctly
+- ✅ Added live link to README.md
+- ✅ Pushed to GitHub
+
+**Live URL:** https://smart-health-monitoring-tamilnadu-urfvx7yejjycqhbqbbrrgm.streamlit.app
+
+**Tomorrow's Plan:**
+- Write final project report
+- Document methodology, results, and findings
+- Add screenshots and charts to report

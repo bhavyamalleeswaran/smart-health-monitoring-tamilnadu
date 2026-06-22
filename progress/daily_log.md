@@ -339,3 +339,21 @@
 - Polish README.md with badges, screenshots, demo video
 - Record 2-3 minute demo video
 - Final presentation polish
+
+---
+
+## Day 16 — June 22, 2026
+**Goal:** Polish README and record demo video
+
+**Completed:**
+- ✅ Rewrote README.md with badges, live dashboard link, screenshots
+- ✅ Added model performance table with real numbers
+- ✅ Added project structure diagram
+- ✅ Recorded 2-3 minute demo video covering full project walkthrough
+- ✅ Uploaded video and added link to README
+- ✅ Pushed final polished README to GitHub
+
+**Tomorrow's Plan:**
+- Final full repo review
+- Verify live dashboard still works
+- Submit project

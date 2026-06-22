@@ -142,7 +142,7 @@ python -m streamlit run dashboard/app.py
 ---
 
 ## 🎥 Demo Video
-**[Watch the project demo](ADD_YOUR_VIDEO_LINK_HERE)**
+**[Watch the project demo](https://drive.google.com/file/d/1SOk5V2DSus3yTIEm4amP8dyELBwmUtBe/view?usp=sharing)**
 
 ---
 
